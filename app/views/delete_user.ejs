@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Delete User</title>
+    <link rel="stylesheet" type="text/css" href="css/addstyle.css" />
+
+</head>
+<body>
+    <!-- Load the static image file  -->
+    <img src="img/logo.png" alt="Logo">
+    <!-- 
+         implement the use of DELETE method
+         this requires the following settings in initialization file:
+         app.use(methodOverride());
+         //handle the use of PUT or DELETE methods
+         app.use(methodOverride('_method'));
+         also, the route handling statement:
+         app.route('/delete').delete(users.deleteByUserName);
+     -->
+    <form method="POST" action="/delete?_method=DELETE">
+        
+        <!-- Use the 'title' property to render a title element  -->
+        <h2>  <%= title %></h2>
+        
+        <div class="container">
+            <label>
+                <b>User name:</b>
+            </label>
+
+            <input type="text" class="fields" name="username" />
+        </div>
+
+        <div class="container">
+            <button type="submit" class="form-field-no-caption">Delete User</button>
+        </div>
+
+    </form>
+
+</body>
+</html>

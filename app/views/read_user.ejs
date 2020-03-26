@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<!-- Use the 'title' property to render a page title  -->
+	<title><%= title %></title>
+    <link rel="stylesheet" type="text/css" href="css/addstyle.css" />
+
+</head>
+<body>
+	<!-- Load the static image file  -->
+	<img src="img/logo.png" alt="Logo">
+
+	<!-- Use the 'title' property to render a title element  -->
+	
+
+	<form action="/read_user" method="post">
+        <!-- Use the 'title' property to render a title element  -->
+        <h2>  <%= title %></h2>
+        <div class="container">
+            <label>
+                <b>First Name:</b>
+            </label>
+            <input type="text" class="fields" name="firstName"  />
+        </div>
+        <div class="container">
+            <label>
+                <b>LastName:</b>
+            </label>
+            <input type="text" class="fields" name="lastName"  />
+        </div>
+        <div class="container">
+            <label>
+                <b>email:</b>
+            </label>
+            <input type="text" class="fields" name="email"  />
+        </div>
+        <div class="container">
+            <label>
+                <b>User name:</b>
+            </label>
+
+            <input type="text" class="fields" placeholder="enter user name" name="username"  />
+        </div>
+        <div class="container">
+            <label>
+                <b>Password:</b>
+            </label>
+            <input type="text" class="fields" name="password"  />
+        </div>
+        <div class="container">
+            <label>
+                <b>Website:</b>
+            </label>
+
+            <input type="text" class="fields" name="website"  />
+        </div>
+
+        <div class="container">
+            <label>
+                <b>Role:</b>
+            </label>
+
+            <input type="text" class="fields" name="role"  />
+        </div>
+        <div class="container">
+            <label>
+                <b>Date Created:</b>
+            </label>
+
+            <input type="text" class="fields" name="created" />
+        </div>
+
+
+        <div class="container">
+            <button type="submit" class="form-field-no-caption">Get by user name</button>
+        </div>
+		</form>
+
+
+</body>
+</html>

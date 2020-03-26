@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Use the 'title' property to render a page title  -->
+	<title><%= title %></title>
+    <link rel="stylesheet" type="text/css" href="css/addstyle.css" />
+
+</head>
+<body>
+	<!-- Load the static image file  -->
+	<img src="img/logo.png" alt="Logo">
+	<form action="/users" method="post">
+        <div class="outer_container">
+            <!-- Use the 'title' property to render a title element  -->
+            <h2>  <%= title %></h2>
+
+            <div class="container">
+                <label>
+                    <b>First Name:</b>
+                </label>
+                <input type="text" class="fields" name="firstName" value="john" />
+            </div>
+            <div class="container">
+                <label>
+                    <b>LastName:</b>
+                </label>
+                <input type="text" class="fields" name="lastName" value="smith" />
+            </div>
+            <div class="container">
+                <label>
+                    <b>email:</b>
+                </label>
+                <input type="text" class="fields" name="email" value="john@example.com" />
+            </div>
+            <div class="container">
+                <label>
+                    <b>User name:</b>
+                </label>
+
+                <input type="text" class="fields" name="username" value="user123" />
+            </div>
+            <div class="container">
+                <label>
+                    <b>Password:</b>
+                </label>
+                <input type="text" class="fields" name="password" value="pass1234" />
+            </div>
+            <div class="container">
+                <label>
+                    <b>Website:</b>
+                </label>
+
+                <input type="text" class="fields" name="website" value="www.example.com" />
+            </div>
+
+            <div class="container">
+                <label>
+                    <b>Role:</b>
+                </label>
+
+                <input type="text" class="fields" name="role" value="Owner" />
+            </div>
+            <div class="container">
+                <label>
+                    <b>Date Created:</b>
+                </label>
+
+                <input type="text" class="fields" name="created" />
+            </div>
+
+
+            <div class="container">
+                <button type="submit" class="form-field-no-caption">Add user</button>
+            </div>
+       </div>
+</form>
+
+
+
+
+</body>
+</html>

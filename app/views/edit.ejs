@@ -1,0 +1,89 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<!-- Use the 'title' property to render a page title  -->
+	<title><%= title %></title>
+    <link rel="stylesheet" type="text/css" href="css/addstyle.css" />
+
+</head>
+<body>
+	<!-- Load the static image file  -->
+	<img src="img/logo.png" alt="Logo">
+
+    <!-- PUT implementation with parameters  -->
+	<form action="/users/<%= user.id %>?_method=PUT" method="POST">
+        <!-- Use the 'title' property to render a title element  -->
+        <h2>  <%= title %></h2>
+
+        <div class="container">
+            <label>
+                <b>Id:</b>
+            </label>
+            <input type="text" class="fields" name="id" value="<%= user.id  %>" />
+        </div>
+        <div class="container">
+            <label>
+                <b>First Name:</b>
+            </label>
+            <input type="text" class="fields" name="firstName" value="<%= user.firstName  %>" />
+        </div>
+        <div class="container">
+            <label>
+                <b>LastName:</b>
+            </label>
+            <input type="text" class="fields" name="lastName" value="<%= user.lastName %>" />
+        </div>
+        <div class="container">
+            <label>
+                <b>email:</b>
+            </label>
+            <input type="text" class="fields" name="email" value="<%= user.email %>" />
+        </div>
+        <div class="container">
+            <label>
+                <b>User name:</b>
+            </label>
+
+            <input type="text" class="fields" name="username" value="<%= user.username %>" />
+        </div>
+        <div class="container">
+            <label>
+                <b>Password:</b>
+            </label>
+            <input type="text" class="fields" name="password" value="<%= user.password %>" />
+        </div>
+        <div class="container">
+            <label>
+                <b>Website:</b>
+            </label>
+
+            <input type="text" class="fields" name="website" value="<%= user.website %>" />
+        </div>
+
+        <div class="container">
+            <label>
+                <b>Role:</b>
+            </label>
+
+            <input type="text" class="fields" name="role" value="<%= user.role %>" />
+        </div>
+        <div class="container">
+            <label>
+                <b>Date Created:</b>
+            </label>
+
+            <input type="text" class="fields" name="created"value="<%= user.created %>" />
+        </div>
+
+
+        <div class="container">
+            <button type="submit" class="form-field-no-caption">Update user</button>
+        </div>
+		
+		</form>
+
+
+
+
+</body>
+</html>

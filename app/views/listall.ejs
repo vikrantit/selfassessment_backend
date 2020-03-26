@@ -1,0 +1,117 @@
+﻿<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title><%= title %> </title>
+    <link rel="stylesheet" type="text/css" href="css/display.css" />
+
+</head>
+<body>
+    <!-- Load the static image file  -->
+    <img src="img/logo.png" alt="Logo">
+    <h2> List of Users</h2>
+    <table class="center">
+        <tr>
+            <td>
+                <div>
+                    <label>First Name</label>
+                </div>
+
+            </td>
+            <td>
+
+                <div>
+                    <label>Last Name</label>
+
+                </div>
+
+            </td>
+            <td>
+                <div>
+                    <label>Email</label>
+                </div>
+            </td>
+            <td>
+                <div>
+                    <label>User Name</label>
+                </div>
+
+            </td>
+            <td>
+                <div>
+
+                    <label>Website </label>
+                </div>
+
+            </td>
+
+            <td>
+                <div>
+                    <label>Role </label>
+                </div>
+
+            </td>
+            <td>
+                <div>
+                    <label>Created </label>
+                </div>
+
+            </td>
+        </tr>
+
+
+        <% users.forEach(function(user){ %>
+
+        <tr>
+            <td>
+                <div>
+
+                    <input type="text" name="firstname" value="<%= user.firstName %>" />
+                </div>
+
+            </td>
+            <td>
+                <div>
+                    <input type="text" name="lastname" value="<%= user.lastName %>" />
+                </div>
+
+            </td>
+            <td>
+                <div>
+                    <input type="text" name="email" value="<%= user.email %>" />
+                </div>
+            </td>
+            <td>
+                <div>
+                    <input type="text" name="username" value="<%= user.username %>" />
+                </div>
+            </td>
+            <td>
+                <div>
+                    <input type="text" name="website" value="<%= user.website %>" />
+                </div>
+            </td>
+            <td>
+                <div>
+                    <input type="text" name="role" value="<%= user.role %>" />
+                </div>
+            </td>
+
+            <td>
+                <div>
+                    <input type="text" name="created" value="<%= user.created %>" />
+                </div>
+            </td>
+            
+
+        </tr>
+
+        <% })%>
+
+    </table>
+
+    <a href="http://localhost:3000"> Main Page</a>
+
+</body>
+</html>
